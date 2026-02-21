@@ -132,7 +132,7 @@
   background-size: cover;       /* fill the card */
   background-position: top;  /* keep main focus centered */
   background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: 0px;
   padding: 20px;
   color: #2e3440;
   display: flex;
