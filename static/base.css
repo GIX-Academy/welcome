@@ -1,0 +1,281 @@
+.topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid #eee;
+  z-index: 9999;
+  padding: 8px 0;
+}
+
+.nav-container {
+  text-align: center;
+}
+
+.topnav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.topnav a:hover {
+  color: #007acc;
+}
+
+/* Dropdown */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 180px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  padding: 8px 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 6px 12px;
+  text-align: left;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.background {
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35; /* adjust for readability */
+}
+
+.bg-half-right .background {
+  width: 50%;
+  right: 0;
+  left: auto;
+}
+
+.icon-small {
+  width: 60px;        /* adjust size */
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexblock li h2 {
+  font-size: 2.8rem;
+  line-height: 1.6;
+}
+
+
+.large-text {
+  font-size: 2.3rem;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 1 1 100%; /* stack items on smaller screens */
+  }
+}
+
+.icon-small {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  /*background: #f9f9f9;*/
+  flex: 1 1 45%; /* two columns per row, auto stack on mobile */
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  /*box-shadow: 0 6px 15px rgba(0,0,0,0.05);*/
+}
+
+.column:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0rem;
+}
+
+@media (max-width: 768px) {
+  .column.bg-card {
+    flex: 1 1 100%; /* stack on mobile */
+    min-height: 200px;
+  }
+}
+
+.column.bg-card {
+  flex: 1 1 45%;       /* 2 per row */
+  min-height: 250px;   /* adjust for visual impact */
+  justify-content: center;   /* center vertically */
+  align-items: center;       /* center horizontally */
+  background-size: cover;       /* fill the card */
+  background-position: top;  /* keep main focus centered */
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 20px;
+  color: #2e3440;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Overlay stays the same */
+.column.bg-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(250,250,250,0.8); /* adjust opacity 0.2–0.6 */
+  z-index: 0;
+  border-radius: 0px;
+}
+
+/* Bring text above overlay */
+.column.bg-card h3,
+.column.bg-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.impact-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.impact-header {
+  text-align: center;
+  padding: 3rem 0 1.5rem;
+}
+
+.impact-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.impact-card {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.impact-card p {
+  text-align: left !important;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.title-divider {
+  width: 240px;
+  height: 2px;
+  margin: 1.8rem auto;
+  background: linear-gradient(90deg, 
+    rgba(255,255,255,0) 0%, 
+    rgba(255,255,255,0.8) 50%, 
+    rgba(255,255,255,0) 100%);
+}
+
+.flexblock.steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;  /* ensures all columns in the row are equal height */
+  gap: 0rem;             /* space between columns */
+}
+
+.flexblock.steps .column {
+  flex: 1 1 calc(50% - 1rem);  /* two columns per row */
+  min-height: 480px;            /* sets minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;      /* vertical center content */
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.05); /* optional subtle background */
+  color: #fff;                  /* text color */
+  position: relative;           /* needed if using ::before overlay */
+}
+
+
+
+.column img {
+  width: 100%;       /* fill column width */
+  height: 100%;      /* fill column height */
+  object-fit: cover; /* crop to cover space, maintain aspect ratio */
+  object-position: center;
+  display: block;
+}
+
+
+.column .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35); /* semi-transparent for contrast */
+  z-index: 1;
+}
+
+.bg-card {
+  text-decoration: none;
+  color: #2e3440;
+  display: block;
+}
+
+.bg-card:visited,
+.bg-card:active,
+.bg-card:hover {
+  color: #2e3440;
+  text-decoration: none;
+}
+
+h1 span {
+  font-family: inherit;
+  font-style: normal;
+}
+
+
+.red-text {
+  color: #bf616a;
+  font-weight: bold;
+}
+
+.grid .column:first-child {
+  text-align: left;
+}
+
+.flexblock .column:first-child {
+  text-align: left;
+}
+
+.icon-pillars {
+  margin-right: 0.8rem;
+  color: #1f4e79;  /* match your brand color */
+  font-size: 1.4rem;
+}
