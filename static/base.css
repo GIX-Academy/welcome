@@ -269,7 +269,7 @@ h1 span {
   font-weight: bold;
 }
 
-.grid .column:first-child {
+.grid .column {
   text-align: left;
 }
 
