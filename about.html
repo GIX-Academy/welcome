@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>People Behind GIX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/webslides@1.5.0/static/css/webslides.css">
+  <link rel="stylesheet" href="static/base.css">
+  <link rel="icon" type="image/x-icon" href="static/fav/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/fav/favicon-16x16.png">
+  <link rel="manifest" href="static/fav/site.webmanifest">
+</head>
+<body>
+
+<header class="topnav">
+  <div class="nav-container">
+    <a href="index.html">Home</a>
+
+    <div class="dropdown">
+      <a href="#">Applications ▾</a>
+      <div class="dropdown-content">
+        <a href="01_disaster.html">Disaster Management</a>
+        <a href="02_urban.html">The 15-Minute City</a>
+        <a href="03_health.html">Health Promotion</a>
+        <a href="04_autonomous.html">Autonomous & EV</a>
+      </div>
+    </div>
+
+    <a href="learning.html">Learning</a>
+    <a href="https://chs.nus.edu.sg/programmes/gi/" target="_blank">Join Us @ NUS</a>
+    <a href="about.html">About</a>
+  </div>
+</header>
+
+
+<main>
+<article id="webslides"  class="vertical">
+
+<section>
+  <div class="wrap size-70">
+
+    <!-- Title & Intro -->
+    <h2 style="text-align:center;">About Us</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto 30px auto;">
+      GIX is an interdisciplinary undergraduate degree programme at the National University of Singapore, 
+      jointly led by the Department of Geography (Faculty of Arts and Social Sciences) and the School of Computing. 
+      It integrates spatial science and computational methods to turn real-world data into informed action.
+    </p>
+
+    <div class="grid">
+
+      <!-- Left column: logo / tagline -->
+      <div class="column" style="width:33.333%; text-align:center;">
+        <img src="static/gix-logo-3.png" alt="GIX Logo" style="max-width:100%; height:auto; object-fit:contain;">
+        <p style="font-style:italic; color:#555;">Exploring spatial intelligence for real-world solutions</p>
+      </div>
+
+      <!-- Right column: people -->
+      <div class="column" style="width:66.666%;">
+
+        <!-- Directors: 2-column enforced -->
+        <h3 style="margin-bottom:10px;">Programme Leadership</h3>
+        <div style="display:flex; justify-content:space-between; margin-bottom:20px; gap:20px; flex-wrap:wrap;">
+          <div class="card" style="flex:0 0 48%; padding:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-radius:8px; text-align:center;">
+            <h4>A/Prof Chen-Chieh Feng</h4>
+            <p style="font-weight:bold; color:#333;">Programme Director (Geography)</p>
+            <p style="color:#555; font-size:0.95em;">Department of Geography, FASS, NUS</p>
+          </div>
+          <div class="card" style="flex:0 0 48%; padding:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-radius:8px; text-align:center;">
+            <h4>A/Prof Min-Yen Kan</h4>
+            <p style="font-weight:bold; color:#333;">Programme Director (Computing)</p>
+            <p style="color:#555; font-size:0.95em;">Vice Dean, Undergraduate Studies, School of Computing, NUS</p>
+          </div>
+        </div>
+
+        <!-- Programme Management: 2 people side-by-side -->
+        <h3 style="margin-bottom:10px;">Programme Management</h3>
+        <div style="display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap;">
+          <div class="card" style="flex:0 0 48%; padding:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-radius:8px; text-align:center;">
+            <h4>Dr. Benny Chin</h4>
+            <p style="font-weight:bold; color:#333;">Lecturer</p>
+            <p style="color:#555; font-size:0.95em;">Department of Geography, FASS, NUS</p>
+          </div>
+          <div class="card" style="flex:0 0 48%; padding:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); border-radius:8px; text-align:center;">
+            <h4>Mr. Eiffel Tan</h4>
+            <p style="font-weight:bold; color:#333;">GIS Manager</p>
+            <p style="color:#555; font-size:0.95em;">Department of Geography, FASS, NUS</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Department logos at bottom -->
+    <div class="content-center" style="margin-top:40px; gap:30px; display:flex; justify-content:center; align-items:center;">
+      <img src="static/NUS_logo_full-horizontal-removebg.png" width="120" alt="NUS Logo">
+    </div>
+
+  </div>
+</section>
+
+
+
+</article>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/webslides@1.5.0/static/js/webslides.js"></script>
+<script>window.ws = new WebSlides();</script>
+<!-- Back to Top Button -->
+<button onclick="scrollToTop()" id="topBtn" title="Back to top">↑</button>
+
+<script>
+window.onscroll = function() {
+  var btn = document.getElementById("topBtn");
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+</script>
+
+</body>
+</html>
